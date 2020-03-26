@@ -1,0 +1,18 @@
+str=input()
+check=[]
+flag=0
+for i in str:
+  if i in check:
+    continue
+  else:
+    check.append(i)
+    
+c="abcdefghijklmnopqrstuvwxyz"
+for item in c:
+  if item not in check:
+    flag=1
+    break
+if flag==0:
+  print("YES")
+elif flag==1:
+  print("NO")
